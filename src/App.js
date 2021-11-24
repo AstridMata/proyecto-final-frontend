@@ -2,9 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./views/Home"
-import Demo from "./views/Demo"
 import Details from "./views/Details"
-
+import Form from "./views/Form"
 
 function App() {
 
@@ -16,7 +15,7 @@ function App() {
             <Home/>
           </Route>
           <Route exact path="/demo">
-            <Demo/>
+            <Form/>
           </Route>
           <Route exact path="/demo/:id">
             <Details/>
