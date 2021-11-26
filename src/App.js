@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./views/Home"
+import Home from "./views/Home";
 import FormRegister from "./views/FormRegister";
-
+import Form from "./views/Form"
 
 
 function App() {
@@ -18,9 +18,10 @@ function App() {
           <Route exact path="/formRegister">
             <FormRegister/>
           </Route>
-          
-          
-          <Route to="*">
+          <Route exact path="/form">
+            <Form/>
+          </Route>
+                    <Route to="*">
             <h2>Not found - 404</h2>
           </Route>
       </Switch>
@@ -29,3 +30,4 @@ function App() {
 }
 
 export default App;
+
