@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 const Form = () => {
 
     return ( 
@@ -11,7 +11,8 @@ const Form = () => {
         <input type="email" />
         <label>Password </label>
         <input type="password" />
-        <a href="#">Don't have An account?</a>
+        <Link className="nav-link" to="/formRegister" input type="submit" value="Log In">Don't have An account?</Link>
+        <Link className="nav-link" to="/RecuperarContraseña" input type="submit" value="Log In">Forget your password?</Link>
         <input type="submit" value="Log In"></input>
       </form>
       </div>  
