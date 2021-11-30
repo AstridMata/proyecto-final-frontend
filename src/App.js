@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -7,6 +6,7 @@ import Home from "./views/Home";
 import FormRegister from "./views/FormRegister";
 import Form from "./views/Form"
 import RecuperarContraseña from "./views/RecuperarContraseña";
+
 
 
 function App() {
@@ -20,7 +20,6 @@ function App() {
           </Route>
           <Route exact path="/formRegister">
             <FormRegister/>
-
           </Route>
           <Route exact path="/form">
             <Form/>
