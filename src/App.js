@@ -1,9 +1,12 @@
+
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./views/Home"
-import Demo from "./views/Demo"
-import Details from "./views/Details"
+import Home from "./views/Home";
+import FormRegister from "./views/FormRegister";
+import Form from "./views/Form"
+import RecuperarContraseña from "./views/RecuperarContraseña";
+
 
 
 function App() {
@@ -21,20 +24,23 @@ function App() {
         <Route exact path="/demo/:id">
           <Details />
         </Route>
-        <Route exact path="/login">
-          <Login />
-        </Route>
+        
         <Route exact path="/register">
             <Register/>
           </Route>
-          <Route exact path="/recoverPassword">
-        <RecoverPassword />
-      </Route>
-      <Route to="*">
-        <h2>Not found - 404</h2>
-      </Route>
-    </Switch>
-    </Router >
+
+          <Route exact path="/form">
+            <Form/>
+    </Route>
+          <Route exact path="/RecuperarContraseña">
+         <RecuperarContraseña/>
+          </Route>
+                    <Route to="*">
+            <h2>Not found - 404</h2>
+          </Route>
+      </Switch>
+    </Router>
+
   );
 }
 
