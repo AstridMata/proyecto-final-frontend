@@ -8,6 +8,7 @@ import FormRegister from "./views/FormRegister";
 import Form from "./views/Form"
 import RecuperarContraseña from "./views/RecuperarContraseña";
 
+
 function App() {
 
   return (
@@ -19,10 +20,10 @@ function App() {
           </Route>
           <Route exact path="/formRegister">
             <FormRegister/>
+
           </Route>
           <Route exact path="/form">
             <Form/>
-          </Route>
           <Route exact path="/RecuperarContraseña">
          <RecuperarContraseña/>
           </Route>
