@@ -12,6 +12,7 @@ const Form = () => {
         <label>Password </label>
         <input type="password" />
         <Link className="nav-link" to="/formRegister" input type="submit" value="Log In">Don't have An account?</Link>
+        <Link className="nav-link" to="/RecuperarContraseña" input type="submit" value="Log In">Forget your password?</Link>
         <input type="submit" value="Log In"></input>
       </form>
       </div>  
