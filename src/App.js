@@ -13,16 +13,25 @@ function App() {
 
   return (
     <Router>
-      <Navbar/>
+      <Navbar />
       <Switch>
-          <Route exact path="/">
-            <Home/>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/demo">
+          <Demo />
+        </Route>
+        <Route exact path="/demo/:id">
+          <Details />
+        </Route>
+        
+        <Route exact path="/register">
+            <Register/>
           </Route>
-          <Route exact path="/formRegister">
-            <FormRegister/>
-          </Route>
+
           <Route exact path="/form">
             <Form/>
+    </Route>
           <Route exact path="/RecuperarContraseña">
          <RecuperarContraseña/>
           </Route>
@@ -31,6 +40,7 @@ function App() {
           </Route>
       </Switch>
     </Router>
+
   );
 }
 
