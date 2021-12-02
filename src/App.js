@@ -7,7 +7,9 @@ import Setting from "./views/Setting";
 import Details from "./views/Details";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import RecoverPassword from "./components/RecoverPassword"
+import RecoverPassword from "./components/RecoverPassword";
+import Footer from "./components/Footer";
+
 
 function App() {
 
@@ -41,7 +43,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-
+ 
   );
 }
 
