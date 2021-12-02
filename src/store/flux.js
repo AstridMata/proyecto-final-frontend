@@ -1,7 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			demo: "No hay color"
+			kidsBooks :[]
 		},
 		actions: {
 			// Usa getActions para llamar una function dentro de una fuction. Te dejo un ejemplo
@@ -13,6 +13,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 				/**
 					fetch().then().then(data => setStore({ demo: data.bar }))
 				*/
+			},
+			loadKidsBooks: () => {
+				fetch(`https://www.googleapis.com/books/v1/volumes?q=kids&orderBy=newest&key=AIzaSyAg-smCGbo7V5vB3tjlw_qOqbtIXwpykqg`)
+				.then(response => response.json())
+				.then(data => setStore({kidsBooks:data.items}));
+				
 			},
 			changeColor: (color) => {
                 //actualiza un dato de la global store
