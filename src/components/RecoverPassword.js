@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-const RecuperarContraseña = () => {
+
+const RecoverPassword = () => {
 
     return ( 
         
@@ -9,10 +9,10 @@ const RecuperarContraseña = () => {
          <form>
         <label>Email </label>
         <input type="email" />
-        <input type="submit" value="Recuperar"></input>
+        <input type="submit" value="Recuperar"/>
       </form>
       </div>  
      );
 }
  
-export default RecuperarContraseña; 
+export default RecoverPassword; 

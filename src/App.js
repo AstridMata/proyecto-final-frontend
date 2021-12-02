@@ -3,11 +3,11 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./views/Home";
-import FormRegister from "./views/FormRegister";
-import Form from "./views/Form"
-import RecuperarContraseña from "./views/RecuperarContraseña";
-
-
+import Setting from "./views/Setting";
+import Details from "./views/Details";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import RecoverPassword from "./components/RecoverPassword"
 
 function App() {
 
@@ -16,28 +16,29 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/">
+          <Setting />
+        </Route>
+        <Route exact path="/home">
           <Home />
         </Route>
-        <Route exact path="/demo">
-          <Demo />
+        <Route exact path="/details">
+          <Details /> 
+          </Route>
+          <Route exact path="/setting">
+          <Setting />
         </Route>
-        <Route exact path="/demo/:id">
-          <Details />
+        <Route exact path="/setting/login">
+          <Login />
         </Route>
-        
-        <Route exact path="/register">
-            <Register/>
-          </Route>
-
-          <Route exact path="/form">
-            <Form/>
-    </Route>
-          <Route exact path="/RecuperarContraseña">
-         <RecuperarContraseña/>
-          </Route>
-                    <Route to="*">
-            <h2>Not found - 404</h2>
-          </Route>
+        <Route exact path="/setting/register">
+          <Register />
+        </Route>
+        <Route exact path="/setting/recoverPassword">
+          <RecoverPassword />
+        </Route>
+        <Route to="*">
+          <h2>Not found - 404</h2>
+        </Route>
       </Switch>
     </Router>
 
