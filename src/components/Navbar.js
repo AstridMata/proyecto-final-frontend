@@ -22,20 +22,18 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/register">Register</Link>
+              <Link className="nav-link" to="/Details">Explore</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/form">Log in</Link>
-            </li>
+            
 
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <FontAwesomeIcon icon={faUser} />
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a className="dropdown-item" ><Link className="nav-link" to="/login">login</Link></a></li>
-                <li><a className="dropdown-item" ><Link className="nav-link" to="/register">Register</Link></a></li>
-                <li><a className="dropdown-item" ><Link className="nav-link" to="/recoverPassword">Recover Password</Link></a></li>
+                <li><a className="dropdown-item" ><Link className="nav-link" to="/setting/login">login</Link></a></li>
+                <li><a className="dropdown-item" ><Link className="nav-link" to="/setting/register">Register</Link></a></li>
+                <li><a className="dropdown-item" ><Link className="nav-link" to="/setting/recoverPassword">Recover Password</Link></a></li>
               </ul>
             </li>
           </ul>

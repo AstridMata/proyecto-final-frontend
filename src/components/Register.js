@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 
-const FormRegister = () => {
+const Register = () => {
 
     return (
 
@@ -15,11 +15,11 @@ const FormRegister = () => {
                 <input type="password" />
                 <label>Confirm Password </label>
                 <input type="password" />
-                <Link className="nav-link" to="/form" input type="submit" value="Log In">Register</Link>
+                <Link className="nav-link" to="/setting/login" input type="submit" value="Log In">login</Link>
                 
             </form>
         </div>
     );
 }
 
-export default FormRegister;
+export default Register;
