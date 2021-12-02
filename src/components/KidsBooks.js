@@ -8,6 +8,7 @@ import { Context } from "../store/appContext";
 const KidsBooks = () => {
 
     const{store} = useContext(Context);
+    console.log();
 
     const config = {
       dots: true,
