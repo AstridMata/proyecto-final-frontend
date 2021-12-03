@@ -1,23 +1,30 @@
-import React from "react";
 
-const Card = () => {
+import React, {useContext} from 'react';
+import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
+
+
+export const Card = (props) => {
+
+    const{store} = useContext(Context);
 
     return (
-        <div class="card mb-3 mt-5 mx-auto" style={{maxWidth: '540px'}}>
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="https://cdn.builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/women-in-tech-pillar-page-instagram-accounts-to-follow_0.png" class="img-fluid rounded-start" alt="..." />
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Mujeres en tecnologia</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
+        <div className="card-columns col-4" style={{ width: "18rem" }}>
+          <div className="carta">
+          <img
+          src={props.image}
+          className="card "
+          alt="..."
+        />
+            <div className="card-body">  
+                <h6 className="card-title">{props.title}</h6>
             </div>
+          </div>
         </div>
-    );
-}
+      );
 
+   
+  } 
 export default Card;
+
+
