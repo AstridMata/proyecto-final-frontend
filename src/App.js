@@ -18,16 +18,16 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/demo">
+        {/* <Route exact path="/demo">
           <Demo />
         </Route>
         <Route exact path="/demo/:id">
           <Details />
-        </Route>
+        </Route>*/}
         
         <Route exact path="/register">
-            <Register/>
-          </Route>
+            <FormRegister/>
+          </Route> 
 
           <Route exact path="/form">
             <Form/>
