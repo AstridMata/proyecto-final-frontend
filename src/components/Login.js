@@ -1,39 +1,21 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from "react-router-dom";
-import react, {useState} from 'react';
 import {Redirect} from 'react-router';
-import axios from 'axios';
+import { Context } from '../store/appContext';
 
-const Form = () => {
+const Login = () => {
     const [email, setEmail]= useState('');
 const [password,setPassword]= useState ('');
-const [auth,setAuth]= useState(false);
+const { store,actions } = useContext(Context);
 
 function handleSubmit(e) {
     e.preventDefault()
-    console.log(email,password);
+    actions.login(email,password);}
 
-    axios.post('http://localhost:8080/setting/login',{
-        email:email,
-        password:password
-        })
-        .then(function(response){
-        if(response.status ===200){
-        setAuth(true)
-        localStorage.setItem('token',response.data.token)
-        }
-        console.log(response);
-        })
-        .catch(function(error){
-        console.log(error);
-        });
-        
-}    
-
-
+    
     return ( 
         <>
-        {auth?<Redirect to='/Details'/>:
+       {store.auth ?<Redirect to='/Details'/>:
         <div className="login-box"> 
             <h1>logo</h1>
          <form onSubmit={handleSubmit}>
@@ -52,4 +34,4 @@ function handleSubmit(e) {
      );
 }
  
-export default Form; 
+export default Login; 

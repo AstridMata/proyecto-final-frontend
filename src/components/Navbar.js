@@ -1,12 +1,13 @@
 
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUser} from '@fortawesome/free-solid-svg-icons';
+import { Context } from "../store/appContext";
 
 const Navbar = () => {
 
-
+  const { store, actions } = useContext(Context)
   return (
 
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,6 +36,10 @@ const Navbar = () => {
                 <li><a className="dropdown-item" ><Link className="nav-link" to="/setting/register">Register</Link></a></li>
                 <li><a className="dropdown-item" ><Link className="nav-link" to="/setting/recoverPassword">Recover Password</Link></a></li>
               </ul>
+              {store.auth ?
+              <li className="nav-item">
+                <Link className="nav-link" to="/"> <button onClick={() => actions.logout()} className="btn btn-warning" >Logout</button></Link>
+              </li> : null}
             </li>
           </ul>
         </div>

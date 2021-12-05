@@ -18,12 +18,9 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/">
-          <Setting />
-        </Route>
-        <Route exact path="/home">
           <Home />
         </Route>
-        <Route exact path="/details">
+         <Route exact path="/details">
           <Details /> 
           </Route>
           <Route exact path="/setting">
@@ -42,6 +39,7 @@ function App() {
           <h2>Not found - 404</h2>
         </Route>
       </Switch>
+      <Footer/>
     </Router>
  
   );
