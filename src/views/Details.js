@@ -10,18 +10,20 @@ const Details = () => {
     },[])
 
     return (
-        <div className="CardDetails">
-          {store.books.map((item) => (
-            <Card
-              title={item.volumeInfo.title}
-              image={item.volumeInfo.imageLinks.thumbnail}
-            />
-          ))}
-          
-        </div>
+      <div className="CardDetails">
+      {store.books.map((item) => (
+        <Card
+          title={item.volumeInfo.title}
+          image={item.volumeInfo.imageLinks?.thumbnail}
+          id={item.id}
+        />
+      ))}
+      
+    </div>
       );
 
    
 }
  
 export default Details; 
+
