@@ -25,7 +25,15 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/Details">Explore</Link>
             </li>
-            
+
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Favorites
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                { store.favoritos.length===0? <li><a className="dropdown-item" > No hay libros agregados</a></li>:    store.favoritos.map((item)=> <li><a className="dropdown-item" ><Link className="nav-link" to="/Details">{item}</Link></a></li>)}
+              </ul>
+            </li>
 
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
