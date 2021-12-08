@@ -71,4 +71,11 @@
     color:red;
   }
 
-  
+  /* HOME CARDS STYLE  */
+
+.gradient{
+    background: linear-gradient(to top, rgba(27, 29, 31, 0.952), rgb(255, 255, 255));
+}
+.upcoming{
+  padding-right: 5rem!important;
+}
