@@ -1,7 +1,11 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			kidsBooks :[]
+			kids :[],
+			details : null,
+			fantasy: [],
+			thriller: [],
+			romance: []
 		},
 		actions: {
 			// Usa getActions para llamar una function dentro de una fuction. Te dejo un ejemplo
@@ -15,12 +19,33 @@ const getState = ({ getStore, getActions, setStore }) => {
 				*/
 			},
 			loadKidsBooks: () => {
-				fetch(`https://www.googleapis.com/books/v1/volumes?q=kids&orderBy=newest&key=AIzaSyAg-smCGbo7V5vB3tjlw_qOqbtIXwpykqg`)
+				fetch(`https://www.googleapis.com/books/v1/volumes?q=kids&orderBy=newest&key=${process.env.REACT_APP_API_KEY_GOOGLE}`)
 				.then(response => response.json())
-				.then(data => setStore({kidsBooks:data.items}));
+				.then(data => setStore({kids:data.items}));
 				
 			},
-			changeColor: (color) => {
+			loadFantasyBooks: () => {
+				fetch(`https://www.googleapis.com/books/v1/volumes?q=fantasy&orderBy=newest&key=${process.env.REACT_APP_API_KEY_GOOGLE}`)
+				.then(response => response.json())
+				.then(data => setStore({fantasy:data.items}));
+			},
+			loadThillerBooks: () => {
+				fetch(`https://www.googleapis.com/books/v1/volumes?q=thriller&orderBy=newest&key=${process.env.REACT_APP_API_KEY_GOOGLE}`)
+				.then(response => response.json())
+				.then(data => setStore({thriller:data.items}));
+			},
+			loadRomanceBooks: () => {
+				fetch(`https://www.googleapis.com/books/v1/volumes?q=romance&orderBy=newest&key=${process.env.REACT_APP_API_KEY_GOOGLE}`)
+				.then(response => response.json())
+				.then(data => setStore({romance:data.items}));
+				
+			},
+			loadDetails: (id) => {
+				fetch(`https://www.googleapis.com/books/v1/volumes/${id}?key=${process.env.REACT_APP_API_KEY_GOOGLE}`)
+				.then(response => response.json())
+				.then(data => setStore({details:data}));
+			},
+			changeColor: (color) => {	
                 //actualiza un dato de la global store
                 setStore({ demo: color });
                 

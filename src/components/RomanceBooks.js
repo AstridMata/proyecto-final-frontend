@@ -6,10 +6,10 @@ import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
 
-const KidsBooks = () => {
+const RomanceBooks = () => {
 
     const{store} = useContext(Context);
-    console.log(store.kids);
+    console.log(store.romance);
 
     const config = {
       dots: true,
@@ -23,7 +23,7 @@ const KidsBooks = () => {
 
     return ( 
         <Slider {...config}>
-      {store.kids.map((item, i) => {
+      {store.romance.map((item, i) => {
         return (
           <div key={item.id} className="row row-cols-1">
             <div className="col">
@@ -48,4 +48,4 @@ const KidsBooks = () => {
      );
 }
  
-export default KidsBooks;
+export default RomanceBooks;
