@@ -20,21 +20,21 @@ const Home = () => {
     return (
       <>
         <div className="row gradient">
-        <div className="container border-0 mt-5 mb-5 ms-4 upcoming">
-          <h2 className="text-danger fw-bold">Romance-Books</h2>
+        <div className="container border-0 ms-5 mt-5 upcoming">
+          <h4 className="text-danger fw-bold">Romance-Books</h4>
             <RomanceBooks /> 
           </div>
-        <div className="container border-0 mt-5 mb-5 ms-4 upcoming">
-          <h2 className="text-danger fw-bold">Thriller-Books</h2>
+        <div className="container border-0 ms-5 mt-5 upcoming">
+          <h4 className="text-danger fw-bold">Thriller-Books</h4>
             <ThrillerBooks /> 
           </div>
-          <div className="container border-0 mt-5 mb-5 ms-4 upcoming">
-          <h2 className="text-danger fw-bold">Fantasy-Books</h2>
+          <div className="container border-0 ms-5 mt-5 upcoming">
+          <h4 className="text-danger fw-bold">Fantasy-Books</h4>
             <FantasyBooks />
           </div>
-          <div className="container border-0 mt-5 mb-5 ms-4 upcoming">
-            <h2 className="text-danger fw-bold">Kids-Books</h2>
-            <KidsBooks />
+          <div className="container border-0 ms-5 mb-5 mt-5 upcoming">
+            <h4 className="text-danger fw-bold">Kids-Books</h4>
+            <KidsBooks /> 
           </div>
         </div>
       </>

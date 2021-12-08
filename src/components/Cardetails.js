@@ -1,6 +1,7 @@
 import React, {useContext,useEffect} from 'react';
 import { useParams } from 'react-router';
 import { Context } from "../store/appContext";
+import { Link } from 'react-router-dom';
 
 
 const Cardetails = () => {
@@ -26,9 +27,7 @@ const Cardetails = () => {
                 <p className="card-text">
                   {store.details?.volumeInfo.authors}
                 </p>
-                <p className="card-text">
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </p>
+                <Link to="/"><button type="button" className="btn btn-outline-danger mt-5">Volver</button></Link>
               </div>
             </div>
           </div>
