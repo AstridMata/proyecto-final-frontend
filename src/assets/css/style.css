@@ -62,4 +62,13 @@
     height: 60%;
   }
 
+  .heart{
+    color:rgb(245, 147, 147);
+    
+  }
+
+  .heart:hover{
+    color:red;
+  }
+
   
