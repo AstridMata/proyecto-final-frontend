@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import RecoverPassword from "./components/RecoverPassword";
 import Footer from "./components/Footer";
+import Cardetails from "./components/Cardetails";
 
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
         </Route>
         <Route exact path="/setting/recoverPassword">
           <RecoverPassword />
+        </Route>
+        <Route exact path="/cardetails/:id">
+          <Cardetails />
         </Route>
         <Route to="*">
           <h2>Not found - 404</h2>

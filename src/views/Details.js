@@ -18,12 +18,11 @@ const Details = () => {
           id={item.id}
         />
       ))}
-      
     </div>
       );
 
    
 }
  
-export default Details; 
+export default Details;
 
