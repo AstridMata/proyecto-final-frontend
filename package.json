@@ -13,13 +13,19 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
     "bootstrap": "^5.0.2",
+<<<<<<< HEAD
     "popper.js": "^1.16.1",
+=======
+    "emailjs-com": "^3.2.0",
+>>>>>>> dc4f2eefff3641f41557ec84db6c40f0930c3386
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.3.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

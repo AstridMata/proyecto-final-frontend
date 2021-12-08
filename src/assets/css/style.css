@@ -40,3 +40,35 @@
   .login-box a:hover {
     color: #fff;
   }
+
+  .CardDetails{
+    display: flex;
+  flex-flow: row wrap;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  justify-content: space-between;
+  }
+
+  .carta{
+  
+      padding-bottom: 30%;
+    
+  }
+
+  .card2 {
+    width: 80%;
+    height: 60%;
+  }
+
+  .heart{
+    color:rgb(245, 147, 147);
+    
+  }
+
+  .heart:hover{
+    color:red;
+  }
+
+  
