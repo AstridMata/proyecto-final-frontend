@@ -1,5 +1,5 @@
 import axios from "axios";
-import Swal from 'sweetalert2'
+// import Swal from 'sweetalert2';
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
@@ -88,31 +88,31 @@ const getState = ({ getStore, getActions, setStore }) => {
 					});
 
 			},
-			addFavoritos: favorito =>{
+			// addFavoritos: favorito =>{
 				
-				console.log(getStore().favoritos.includes(favorito));
-				if(getStore().favoritos.includes(favorito)){
+			// 	console.log(getStore().favoritos.includes(favorito));
+			// 	if(getStore().favoritos.includes(favorito)){
                 
-				Swal.fire({
-					title: 'The book is already added',
-					showClass: {
-					  popup: 'animate__animated animate__fadeInDown'
-					},
-					hideClass: {
-					  popup: 'animate__animated animate__fadeOutUp'
-					}
-				  })
-				}
-				else{
-					setStore({
-						favoritos:getStore().favoritos.concat(favorito)
+			// 	Swal.fire({
+			// 		title: 'The book is already added',
+			// 		showClass: {
+			// 		  popup: 'animate__animated animate__fadeInDown'
+			// 		},
+			// 		hideClass: {
+			// 		  popup: 'animate__animated animate__fadeOutUp'
+			// 		}
+			// 	  })
+			// 	}
+			// 	else{
+			// 		setStore({
+			// 			favoritos:getStore().favoritos.concat(favorito)
 	
 	
-					});
+			// 		});
                  
-				}
+			// 	}
 				
-			}
+			// }
 
 
 		}
