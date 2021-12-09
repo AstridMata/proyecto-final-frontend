@@ -24,7 +24,6 @@ function App() {
         </Route>
          <Route exact path="/details">
           <Details /> 
-          <Footer/>
           </Route>
           <Route exact path="/setting">
           <Setting />
@@ -46,7 +45,6 @@ function App() {
           <h2>Not found - 404</h2>
         </Route>
       </Switch>
-      
     </Router>
  
   );

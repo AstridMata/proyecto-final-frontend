@@ -10,9 +10,11 @@ const Setting = () => {
 
     return ( 
         <>
+        <div>
        <Login/>
        <Register/>
        <RecoverPassword/>
+       </div>
         </>
      );
 }
