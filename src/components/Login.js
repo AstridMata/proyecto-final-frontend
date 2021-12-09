@@ -45,9 +45,9 @@ function handleSubmit(e) {
     
     return ( 
         <>
-       {auth?<Redirect to='/Details'/>:
+       {auth?<Redirect to='/details'/>:
         <div className="login-box"> 
-            <h1>logo</h1>
+            <h1>Inicia con tu contraseña</h1>
          <form onSubmit={handleSubmit}>
         <label>Email </label>
         <input type="email" onChange={(e)=>setEmail(e.target.value)}  />

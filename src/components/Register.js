@@ -36,7 +36,7 @@ const Register = () => {
     return (
 
         <div className="login-box">
-            <h1>logo</h1>
+            <h1>Registrarse</h1>
             <form onSubmit={e => handleSubmit(e)}>
                 <label>Email </label>
                 <input type="email" id="floatingInput" placeholder="nombre@dominio.com" onChange={e => setEmail(e.target.value)} />
@@ -45,7 +45,7 @@ const Register = () => {
                 onChange={e => setPass(e.target.value)} />
                 <label>Confirm Password </label>
                 <input type="password" />
-                <Link className="nav-link" to="/form" input type="submit" value="Log In">Register</Link> 
+                <Link className="nav-link" to="/setting/login" input type="submit" value="Log In">Register</Link> 
             </form>
             {redirect ? <Redirect to="/setting/login" /> : ""}
         </div>

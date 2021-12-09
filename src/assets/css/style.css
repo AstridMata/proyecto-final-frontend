@@ -1,75 +1,77 @@
 .login-box {
-    width: 320px;
-    height: 420px;
-    background: #000;
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-  }
+  width: 60%;
+  height: 60%;
+  background: rgb(218, 214, 214);
+  color: rgb(78, 72, 72);
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  /* transform: translate(-50%, -50%); */
+  box-sizing: border-box;
+  padding: 00 20 20px
+}
 
-  .login-box h1 {
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-  }
+.login-box h1 {
+  margin: 2;
+  padding: 10 10 20px;
+  text-align: center;
+  font-size: 2rem;
+}
 
-  .login-box label {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block;
-  }
+.login-box label {
+  margin: auto;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 2rem;
+ 
+ 
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  color:rgba(27, 29, 31, 0.952)
+}
+
+.login-box a:hover {
+  color: #fff;
+}
+
+.CardDetails{
+  display: flex;
+flex-flow: row wrap;
+padding-left: 5%;
+padding-right: 5%;
+padding-top: 5%;
+padding-bottom: 5%;
+justify-content: space-between;
+position:absolute;
+}
+
+.carta{
+
+    padding-bottom: 30%;
   
-  .login-box input {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+}
+.card2 {
+  width: 80%;
+  height: 60%;
+}
 
-  .login-box a {
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 20px;
-    color: darkgrey;
-  }
+.heart{
+  color:rgb(245, 147, 147);
   
-  .login-box a:hover {
-    color: #fff;
-  }
+}
 
-  .CardDetails{
-    display: flex;
-  flex-flow: row wrap;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  justify-content: space-between;
-  }
-
-  .carta{
-  
-      padding-bottom: 30%;
-    
-  }
-
-  .card2 {
-    width: 80%;
-    height: 60%;
-  }
-
-  .heart{
-    color:rgb(245, 147, 147);
-    
-  }
-
-  .heart:hover{
-    color:red;
-  }
+.heart:hover{
+  color:red;
+}
 
   /* HOME CARDS STYLE  */
 
@@ -77,5 +79,9 @@
     background: linear-gradient(to top, rgba(27, 29, 31, 0.952), rgb(255, 255, 255));
 }
 .upcoming{
-  padding-right: 5rem!important;
+  padding-right: 6rem!important;
 }
+
+
+
+

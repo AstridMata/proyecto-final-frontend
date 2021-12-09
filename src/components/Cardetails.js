@@ -16,7 +16,7 @@ const Cardetails = () => {
 
     return (
             <div>
-        <div className="card mb-3" style={{maxWidth: "540px"}}>
+        <div className="card mb-3" style={{width: "700px"}}>
           <div className="row g-0">
             <div className="col-md-4">
               <img src={store.details?.volumeInfo.imageLinks.thumbnail} className="img-fluid rounded-start" alt="..." />
@@ -28,6 +28,7 @@ const Cardetails = () => {
                   {store.details?.volumeInfo.authors}
                 </p>
                 <Link to="/"><button type="button" className="btn btn-outline-danger mt-5">Volver</button></Link>
+                <a href={store.details?.volumeInfo.previewLink}><button type="button" className="btn btn-outline-danger mt-5 ms-2">Mas..</button></a>
               </div>
             </div>
           </div>
