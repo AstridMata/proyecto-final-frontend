@@ -20,9 +20,11 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+          <Footer/>
         </Route>
          <Route exact path="/details">
           <Details /> 
+          <Footer/>
           </Route>
           <Route exact path="/setting">
           <Setting />
@@ -38,12 +40,13 @@ function App() {
         </Route>
         <Route exact path="/cardetails/:id">
           <Cardetails />
+          <Footer/>
         </Route>
         <Route to="*">
           <h2>Not found - 404</h2>
         </Route>
       </Switch>
-      <Footer/>
+      
     </Router>
  
   );
